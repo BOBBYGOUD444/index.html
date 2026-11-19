@@ -126,3 +126,4 @@ addEventListener('scroll',()=>{sy=scrollY;f()},{passive:true});
 addEventListener('deviceorientation',e=>{if(e.gamma!=null){mx=e.gamma/90;my=(e.beta-45)/90;f()}});f();
 const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('in')),{threshold:.15});document.querySelectorAll('.rv').forEach(e=>io.observe(e));
 </script></body></html>
+ 
